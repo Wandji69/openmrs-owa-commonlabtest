@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "name": "commonlabtest",
-  "description": "To manager patients lab test",
+  "description": "manage test types",
   "launch_path": "index.html",
   "icons": {
     "48": "/img/omrs-button.png"

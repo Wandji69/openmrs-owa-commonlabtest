@@ -7,13 +7,63 @@
  * graphic logo is a trademark of OpenMRS Inc.
  */
 import React from 'react';
+// import styleReferenceapplication from '@openmrs/style-referenceapplication'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class App extends React.Component {
+
   render() {
     return (
-      <div>
-        <h1>Hello, world</h1>
-      </div>
-    )
-  }
-}
+
+      <div id="boby-wrapper">
+        <div id="content">
+          <form id="addtesttype">
+            <fieldset>
+              <legend>
+                <h1>Add Test Type</h1>
+              </legend>
+              <p>
+                <label className='left'>Reference Concept</label>
+                <input className='right' type="text"
+                  placeholder="Search Concept" />
+              </p>
+              <p>
+                <label className='left'>Test Name</label>
+                <input className='right' type="text"
+                />
+              </p><br/>
+              <p>
+                <label className='left'>Short Name</label>
+                <input type="text" className='right'
+                />
+              </p><br/>
+              <p>
+                <label className='left' >Description</label>
+                <input className='right'
+                  type="text"
+                />
+                </p><br/>
+                <p>
+                  <label className='left'>RequireSpice</label>
+                </p>
+            </fieldset>
+              <button className='left' onClick={
+                this.handleSubmit}
+                type='submit'
+                className='confirm'
+                id='AddTestType'>
+                Save Test Type
+                                </button>
+              <button className='right' onClick={
+                this.handleCancel
+              }
+              >Cancel
+                            </button>
+         </form>
+        </div>
+        </div>
+        )
+    
+      }
+    }
+    

@@ -7,12 +7,16 @@
  * graphic logo is a trademark of OpenMRS Inc.
  */
 import React from 'react'
-import {Route} from 'react-router'
+import { Route } from 'react-router'
+import { Switch } from 'react-router-dom'
 import App from './components/App'
+// import DashBoard from './components/DashBoard';
 
 export default () => {
   return (
-    <Route path="/" component={App}>
-    </Route>
+    <Switch>
+      <Route exact path="/" component={App} />
+      {/* <Route exact path="/commonlab" component={DashBoard} /> */}
+    </Switch>
   );
 }
