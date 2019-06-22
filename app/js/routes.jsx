@@ -6,17 +6,19 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-import React from 'react'
-import { Route } from 'react-router'
-import { Switch } from 'react-router-dom'
-import App from './components/App'
-// import DashBoard from './components/DashBoard';
+import React from 'react';
+import { Route } from 'react-router';
+import { Switch } from 'react-router-dom';
+import ManageTestTypes from './components/Home/ManageTestTypes';
+import AddTestType from './components/Forms/AddTestType';
+import ManageAttributeTypes from "./components/Home/ManageAttributeTypes";
 
 export default () => {
   return (
     <Switch>
-      <Route exact path="/" component={App} />
-      {/* <Route exact path="/commonlab" component={DashBoard} /> */}
+        <Route exact path="/" component={ManageTestTypes} />
+        <Route path="/addtestType" Component={AddTestType} />
+        <Route path="/manageAttributeType" component={ManageAttributeTypes} />
     </Switch>
   );
 }

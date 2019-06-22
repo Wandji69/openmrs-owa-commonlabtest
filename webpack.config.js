@@ -51,7 +51,7 @@ var getConfig = function () {
 	  } catch (err) {
 	    // create file with defaults if not found
 	    config = {
-	      'LOCAL_OWA_FOLDER': '/home/collins/.OpenMRSowa/owa/',
+	      'LOCAL_OWA_FOLDER': '/home/collins/.OpenMRS/owa/',
 	      'APP_ENTRY_POINT': 'http://localhost:8080/openmrs/owa/commonlabtest/index.html'
 	    };
 
