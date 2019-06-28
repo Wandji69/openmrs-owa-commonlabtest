@@ -10,15 +10,13 @@ import React from 'react';
 import { Route } from 'react-router';
 import { Switch } from 'react-router-dom';
 import ManageTestTypes from './components/Home/ManageTestTypes';
-import AddTestType from './components/Forms/AddTestType';
-import ManageAttributeTypes from "./components/Home/ManageAttributeTypes";
+// import AddTestType from './components/Forms/AddTestType';
 
 export default () => {
   return (
     <Switch>
         <Route exact path="/" component={ManageTestTypes} />
-        <Route path="/addtestType" Component={AddTestType} />
-        <Route path="/manageAttributeType" component={ManageAttributeTypes} />
+        {/* <Route path="/addtestType" Component={AddTestType} /> */}
     </Switch>
   );
 }

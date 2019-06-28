@@ -69,200 +69,178 @@ header .logo img {
 .instructions {
     align-self: center;
 }
-fieldset {
-    border: 1px solid silver;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-legend {
-    border: 0;
-    /* 1 */
-    padding: 0;
-    /* 2 */
+
+
+.below-nav-section{
+  height: 10%;
+  width: 97%;
+  margin:auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-/*
- * 1. Corrects font family not being inherited in all browsers.
- * 2. Corrects font size not being inherited in all browsers.
- * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
- */
-button,
-input,
-select,
-textarea {
-    font-family: inherit;
-    /* 1 */
-    font-size: 100%;
-    /* 2 */
-    margin: 0;
-    /* 3 */
+.below-nav-section>button{
+  padding:0 3px;
+  background-color: #01a28f00;
+  border: none;
+  border-right: 1px solid #FFFFFF;
 }
 
-/*
- * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-    line-height: normal;
+.below-nav-section{
+  margin-top: 1px;
+  height: 5px;
+  width: 100%;
+  margin: 5px auto 8px auto;
 }
 
-/*
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Corrects inability to style clickable `input` types in iOS.
- * 3. Improves usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    /* 2 */
-    cursor: pointer;
-    /* 3 */
-}
-.icon-lock:before {
-    content: "\f023";
-}
-form, .form {
-    overflow: hidden;
-}
-form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
-    min-width: 80%;
-    color: #363463;
-    display: block;
-    padding: 5px 10px;
-    margin: 0;
-    margin-top: 5px;
-    background-color: #FFF;
-    border: 1px solid #dddddd;
-}
-form fieldset, .form fieldset {
-    border: 1px solid #eeeeee;
-    display: inline-block;
-    padding: 20px;
-    min-width: 90%;
-}
-form fieldset legend, .form fieldset legend {
-    text-align: left;
-    padding: 0 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-form label, .form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 0px;
-    margin-top: 8px;
-}
-form p, .form p {
-    text-align: left;
-    margin-bottom: 15px;
-}
-form fieldset legend, .form fieldset legend {
-    text-align: left;
-    padding: 0 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form ul.select {
-    min-width: 80%;
-    color: #363463;
-    display: block;
-    padding: 5px 10px;
-    margin: 0;
-    margin-top: 5px;
-    background-color: #FFF;
-    border: 1px solid #dddddd;
+.below-nav-section>a{
+  color:#090a0c;
+  font-weight: 1%;
+  display: inline-block;
+  padding: 5px;
+  border-right:1px solid rgb(43, 43, 43);
+  padding: 1% 1%;
 }
 
-.button, button, input[type="submit"], input[type="button"], input[type="submit"], a.button {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    border-radius: 3px;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-    background: -webkit-linear-gradient(top, #ffffff, #dddddd);
-    background: -moz-linear-gradient(top, #ffffff, #dddddd);
-    background: -o-linear-gradient(top, #ffffff, #dddddd);
-    background: -ms-linear-gradient(top, #ffffff, #dddddd);
-    background: linear-gradient(top, #ffffff, #dddddd);
-    background-color: #dddddd;
-    border: #dddddd 1px solid;
-    padding: 8px 20px;
-    display: inline-block;
-    line-height: 1.2em;
-    color: #363463;
-    cursor: pointer;
-    min-width: 0;
-    max-width: 300px;
-    text-decoration: none;
-}
-.button.confirm, button.confirm, input[type="submit"].confirm, input[type="button"].confirm, input[type="submit"].confirm, a.button.confirm {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    border-radius: 3px;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1d030), color-stop(100%, #88af28));
-    background: -webkit-linear-gradient(top, #a1d030, #88af28);
-    background: -moz-linear-gradient(top, #a1d030, #88af28);
-    background: -o-linear-gradient(top, #a1d030, #88af28);
-    background: -ms-linear-gradient(top, #a1d030, #88af28);
-    background: linear-gradient(top, #a1d030, #88af28);
-    background-color: #88af28;
-    border: #88af28 1px solid;
-    padding: 8px 40px;
-    display: inline-block;
-    line-height: 1.2em;
-    color: white;
-    cursor: pointer;
-    min-width: 0;
-    max-width: 300px;
-    text-decoration: none;
-    max-width: 250px;
-    min-width: 0;
-    margin: 5px 10px 0px 0px;
-}
-.button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="submit"]:hover, a.button:hover {
-    background: #e2e2e2;
-    border-color: #d0d0d0;
-}
-.button.active, button.active, input[type="submit"].active, input[type="button"].active, input[type="submit"].active, a.button.active {
-    background: #d8d8d8;
-    border-color: #d0d0d0;
-}
-.button.confirm:hover, button.confirm:hover, input[type="submit"].confirm:hover, input[type="button"].confirm:hover, input[type="submit"].confirm:hover, a.button.confirm:hover {
-    background: #8eb82a;
-    border-color: #779b23;
-}
-.button.confirm.active, button.confirm.active, input[type="submit"].confirm.active, input[type="button"].confirm.active, input[type="submit"].confirm.active, a.button.confirm.active {
-    background: #81a726;
-    border-color: #779b23;
+h1, h2{
+  font-size: 230%;
+  font-weight: 400;
+  margin-left: 3%;
+  margin-top: 5%;
+  color:#000;
 }
 
-.menu{
-    float: left;
-
-}
-.menu li{
-    list-style-type: none;
-    border-left: 1px solid black;
-    float: left;
-}
-.right-align {
-    float: right;
-}
-.Reference, .TestName, .short, .description, .radio, .TestGroup{
-    margin-bottom: 50px;
+#tp01{
+  color:#575759;
+  float: left;
+  margin: 2% 2% 10% 1%;
 }
 
-.content{
-    color: black;
-    background-color: black;
+#tp01>input{
+  color: #575759;
+}
+
+h3{
+  margin-left: 3%;
+  margin-top: 3%;
+  color:#2A3F70;
+}
+
+.table-area{
+  width:98%;
+  margin:auto;
+  border: 1px solid #01a290;
+  color:#000;
+}
+.table-header-area{
+  height: 5%;
+  background-color:#01a290;
+  text-align: left;
+  padding-left: 1%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #d8d8da;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #d8d8da;
+  padding: 1.5%;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color:#f2f2f2;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+tr{
+  height:15%;
+}
+
+form{
+  position: auto;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  top: 3px;
+  left: 10%;
+}
+
+form > p{
+  color: #eee8e8;
+  margin-top: 3px;
+}
+
+form p input{
+  font-size: 100%;
+  position: absolute;
+  width: 50%;
+  height: 28px;
+  padding: 2px;
+  border-radius: 3px;
+  left: 550px;
+  border: 1px solid #5c5c5c;
+  float: right;
+}
+
+form p textarea{
+  font-size: 130%;
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  padding: 2px;
+  border-radius: 3px;
+  left: 550px;
+  border: 1px solid #5c5c5c;
+}
+
+#desc{
+  height: 105px;
+}
+
+select{
+  position:absolute;
+  top: 450px;
+  left: 550px;
+  width: 50%;
+  height:40px;
+  padding: 2px;
+}
+
+select>option{
+  color: #5c5c5c;
+}
+
+#radio-group>input{
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid #5c5c5c;
+  color:#5c5c5c;
+}
+
+#final-button-one{
+  height: 40px;
+  width: 110px;
+  background-color: #01a290;
+  margin: 5px;
+  border: 2px solid #01a290;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+#final-button-two{
+  height: 40px;
+  width: 80px;
+  background-color: #01a290;
+  margin: 5px;
+  border: 2px solid #01a290;
+  border-radius: 3px;
 }
