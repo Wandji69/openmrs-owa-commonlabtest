@@ -69,178 +69,28 @@ header .logo img {
 .instructions {
     align-self: center;
 }
-
-
-.below-nav-section{
-  height: 10%;
-  width: 97%;
-  margin:auto;
-  padding-top: 2px;
-  padding-bottom: 2px;
+nav-section {
+    margin-top: 5px;
+    height: 5px;
+    width: 97%;
+    margin: 5px auto 8px auto;
 }
-
-.below-nav-section>button{
-  padding:0 3px;
-  background-color: #01a28f00;
-  border: none;
-  border-right: 1px solid #FFFFFF;
+nav-section>link {
+    display: inline-block;
+    padding: 5%;
+    font-weight: normal;
+    color: #2a3f70;
+    border-right: 1px solid rgb(43, 43, 43);
+    padding: 1% 2%;
+    
 }
-
-.below-nav-section{
-  margin-top: 1px;
-  height: 5px;
-  width: 100%;
-  margin: 5px auto 8px auto;
+li>link {
+    color: black;
 }
-
-.below-nav-section>a{
-  color:#090a0c;
-  font-weight: 1%;
-  display: inline-block;
-  padding: 5px;
-  border-right:1px solid rgb(43, 43, 43);
-  padding: 1% 1%;
-}
-
-h1, h2{
-  font-size: 230%;
-  font-weight: 400;
-  margin-left: 3%;
-  margin-top: 5%;
-  color:#000;
-}
-
-#tp01{
-  color:#575759;
-  float: left;
-  margin: 2% 2% 10% 1%;
-}
-
-#tp01>input{
-  color: #575759;
-}
-
-h3{
-  margin-left: 3%;
-  margin-top: 3%;
-  color:#2A3F70;
-}
-
-.table-area{
-  width:98%;
-  margin:auto;
-  border: 1px solid #01a290;
-  color:#000;
-}
-.table-header-area{
-  height: 5%;
-  background-color:#01a290;
-  text-align: left;
-  padding-left: 1%;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  color: #d8d8da;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  color: #d8d8da;
-  padding: 1.5%;
-}
-
-table#t01 tr:nth-child(even) {
-  background-color:#f2f2f2;
-}
-table#t01 tr:nth-child(odd) {
- background-color: #fff;
-}
-
-tr{
-  height:15%;
-}
-
-form{
-  position: auto;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  top: 3px;
-  left: 10%;
-}
-
-form > p{
-  color: #eee8e8;
-  margin-top: 3px;
-}
-
-form p input{
-  font-size: 100%;
-  position: absolute;
-  width: 50%;
-  height: 28px;
-  padding: 2px;
-  border-radius: 3px;
-  left: 550px;
-  border: 1px solid #5c5c5c;
-  float: right;
-}
-
-form p textarea{
-  font-size: 130%;
-  position: absolute;
-  width: 50%;
-  height: 100px;
-  padding: 2px;
-  border-radius: 3px;
-  left: 550px;
-  border: 1px solid #5c5c5c;
-}
-
-#desc{
-  height: 105px;
-}
-
-select{
-  position:absolute;
-  top: 450px;
-  left: 550px;
-  width: 50%;
-  height:40px;
-  padding: 2px;
-}
-
-select>option{
-  color: #5c5c5c;
-}
-
-#radio-group>input{
-  padding: 2px;
-  border-radius: 3px;
-  border: 1px solid #5c5c5c;
-  color:#5c5c5c;
-}
-
-#final-button-one{
-  height: 40px;
-  width: 110px;
-  background-color: #01a290;
-  margin: 5px;
-  border: 2px solid #01a290;
-  border-radius: 3px;
-  margin-right: 20px;
-}
-
-#final-button-two{
-  height: 40px;
-  width: 80px;
-  background-color: #01a290;
-  margin: 5px;
-  border: 2px solid #01a290;
-  border-radius: 3px;
+h1 {
+    font-size: 230%;
+    font-weight: 400;
+    margin-left: 3%;
+    margin-top: 5%;
+    color:#000;
 }

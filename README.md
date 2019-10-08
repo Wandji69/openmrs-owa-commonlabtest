@@ -38,14 +38,14 @@ To deploy directly to your local Open Web Apps directory, run:
 npm run build:deploy
 ````
 
-This will build and deploy the app to the `/home/collins/openmrs/openmrs-platform/owa`
+This will build and deploy the app to the `/home/collins/.OpenMRS/owa/`
 directory. To change the deploy directory, edit the `LOCAL_OWA_FOLDER` entry in
 `config.json`. If this file does not exists, create one in the root directory
 that looks like:
 
 ```js
 {
-  "LOCAL_OWA_FOLDER": "/home/collins/openmrs/openmrs-platform/owa"
+  "LOCAL_OWA_FOLDER": "/home/collins/.OpenMRS/owa/"
 }
 ```
 
@@ -57,7 +57,7 @@ will need the `APP_ENTRY_POINT` entry in your `config.json` file:
 
 ```js
 {
-  "LOCAL_OWA_FOLDER": "/home/collins/openmrs/openmrs-platform/owa",
+  "LOCAL_OWA_FOLDER": "/home/collins/.OpenMRS/owa/",
   "APP_ENTRY_POINT": "http://localhost:8080/openmrs/owa/commonlabtest/index.html"
 }
 ```

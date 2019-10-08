@@ -6,17 +6,13 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-import React from 'react';
-import { Route } from 'react-router';
-import { Switch } from 'react-router-dom';
-import ManageTestTypes from './components/Home/ManageTestTypes';
-// import AddTestType from './components/Forms/AddTestType';
+import React from 'react'
+import {Route} from 'react-router'
+import App from './components/App'
 
 export default () => {
   return (
-    <Switch>
-        <Route exact path="/" component={ManageTestTypes} />
-        {/* <Route path="/addtestType" Component={AddTestType} /> */}
-    </Switch>
+    <Route path="/" component={App}>
+    </Route>
   );
 }

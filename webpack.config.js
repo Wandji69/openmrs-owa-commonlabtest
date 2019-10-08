@@ -6,7 +6,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-// generated on 2019-06-11 using @openmrs/generator-openmrs-owa 0.7.1
+// generated on 2019-09-11 using @openmrs/generator-openmrs-owa 0.7.1
 'use strict';
 const webpack = require('webpack');
 const path = require('path');
@@ -51,7 +51,7 @@ var getConfig = function () {
 	  } catch (err) {
 	    // create file with defaults if not found
 	    config = {
-	      'LOCAL_OWA_FOLDER': '/home/collins/.OpenMRS/owa/',
+	      'LOCAL_OWA_FOLDER': '/home/collins/openmrs/demo/owa/',
 	      'APP_ENTRY_POINT': 'http://localhost:8080/openmrs/owa/commonlabtest/index.html'
 	    };
 

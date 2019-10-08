@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "name": "commonlabtest",
-  "description": "manage test types",
+  "description": "The Common Lab Test Owa is for the comman lab modules used to manage patients lab test results ",
   "launch_path": "index.html",
   "icons": {
     "48": "/img/omrs-button.png"
