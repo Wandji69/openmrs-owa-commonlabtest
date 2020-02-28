@@ -7,12 +7,14 @@
  * graphic logo is a trademark of OpenMRS Inc.
  */
 import React from 'react'
-import {Route} from 'react-router'
+import { Route } from 'react-router'
 import App from './components/App'
 
 export default () => {
   return (
-    <Route path="/" component={App}>
-    </Route>
+    <Switch>
+      <Route path="/" component={App} />
+    </Switch>
+
   );
 }
