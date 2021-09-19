@@ -7,13 +7,13 @@
  * graphic logo is a trademark of OpenMRS Inc.
  */
 import React from 'react';
-import {render} from 'react-dom';
-import {Router, Route, hashHistory} from 'react-router-dom'
+import { render } from 'react-dom';
+import { Router, Route, hashHistory } from 'react-router-dom'
 
 import routes from './routes'
 
 render((
-         <Router history={hashHistory}>
-           {routes()}
-         </Router>
-       ), document.getElementById('app'));
+  <Router history={hashHistory}>
+    {routes()}
+  </Router>
+), document.getElementById('app'));

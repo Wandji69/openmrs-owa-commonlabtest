@@ -1,7 +1,11 @@
+# folders
 .idea
-node_modules
+/node_modules
 bower_components
 dist
+.vscode
+
+# files
 config.jso
 *.iml
 .zip

@@ -1,11 +1,15 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import App from './components/App';
-// import AddTest from './components/Forms/AddTest';
+import Attributes from './components/models/Attributes';
+import AddTest from './components/Forms/AddTest';
 
 export default () => {
   return (
-    
-      <Route path="/" component={App} />
+    <Switch>
+      <Route exact path={["/", "/managetesttypes"]} component={App} />
+      <Route exact path="/manageAttributeTypes" component={Attributes} />
+      <Route exact path="/addtesttypes" component={AddTest} />
+    </Switch>
   );
 }

@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 
 class AddTest extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ReferenceConcept: "",
-      TestName: "",
-      ShortName: "",
-      Description: "",
-      TestGroup: "",
-      RequireSpecimen: "",
-      Submit: "",
-      Cancel: ""
-    };
-  }
-  handleReferenceConcept(event) {
+
+  state = {
+    referenceConcept: "",
+    restName: "",
+    shortName: "",
+    description: "",
+    testGroup: "",
+    requireSpecimen: "",
+    submit: "",
+    cancel: ""
+  };
+
+  handleReferenceConcept = (e) => {
     this.setState({
-      ReferenceConcept: event.target.value,
+      ReferenceConcept: e.target.value,
       Required: true
     });
   }
-  handleTestNameChange(event) {
+  handleTestNameChange = (e) => {
     this.setState({
-      TestName: event.target.value,
+      TestName: e.target.value,
       Required: true
     });
   }
@@ -41,30 +40,24 @@ class AddTest extends Component {
       TestGroup: e.target.value
     });
   }
-  handleSubmit(event) {
-    event.preventDefault();
+  handleSubmit = (e) => {
+    e.preventDefault();
     alert(`
-            ${this.state.ReferenceConcept} 
-            ${this.state.TestName} 
-            ${this.state.ShortName}
-            ${this.state.Description}
-            ${this.state.TestGroup}
-            ${this.state.RequireSpecimen}`);
+    ${this.state.referenceConcept} 
+    ${this.state.testName} 
+    ${this.state.shortName} 
+    ${this.state.description} 
+    ${this.state.testGroup} 
+    ${this.state.requireSpecimen}`);
+    this.props.addTest(this.state);
+    e.target.reset();
   }
 
-  handleCancle(event) {
-    event.close();
+  handleCancle = (e) => {
+    e.close();
   }
 
   render() {
-    const {
-      referenceConcept,
-      testgroup,
-      description,
-      testName,
-      shortName,
-      requireSpecimen
-    } = this.state;
     return (
       <div id="boby-wrapper">
         <div id="content">
@@ -81,7 +74,10 @@ class AddTest extends Component {
                 <p>
                   Reference Concept
                   <input
+                    name="Reference Concept"
+                    required
                     type="text"
+                    autoComplete="off"
                     className="right-align"
                     placeholder="Search Concept"
                     value={referenceConcept}
@@ -93,6 +89,9 @@ class AddTest extends Component {
                 <p>
                   Test Name
                   <input
+                    name="Test Name"
+                    autoComplete="off"
+                    required
                     type="text"
                     className="right-align"
                     value={testName}
@@ -100,11 +99,12 @@ class AddTest extends Component {
                   />
                 </p>
               </div>
-
               <div className="Short">
                 <p>
                   Short Name
                   <input
+                    name="Short Name"
+                    autoComplete="off"
                     type="text"
                     className="right-align"
                     value={shortName}
@@ -116,6 +116,7 @@ class AddTest extends Component {
                 <p style={{ color: "black" }} id="desc">
                   Description
                   <textarea
+                    name="Description"
                     placeholder=" "
                     spellcheck="true"
                     className="right-align"
@@ -128,34 +129,38 @@ class AddTest extends Component {
                 <p id="last-form-item">
                   Test Group
                   <select
+                    name="Test Group"
                     className="form-control right-align"
                     value={testgroup}
                     onChange={this.handleTestGroupChange}>
-                    {/* <ConceptList /> */}
+                    <ConceptList />
                   </select>
                 </p>
               </div>
 
               <div className="radio">
                 <p id="radio-group">
-                  <label value={requireSpicemen}> Required Specimen Yes</label>
+                  <label value={requireSpecimen}> Required Specimen Yes</label>
                   <input type="check" value="yes" defaultChecked="true" />{" "}
                   <label> YES </label>
                   <input type="check" value="No" defaultChecked="false" />
                   <label> NO </label>
                 </p>
               </div>
-              <button
-                onChange={this.handleSubmit}
-                type="submit"
-                className="confirm"
-                id="final-button-one"
-              >
-                Save Test Type
+              <div className="input-field col s2">
+                <button
+                  onClick={this.handleSubmit}
+                  type="submit"
+                  value="Save Test Type"
+                  className="confirm"
+                  id="final-button-one"
+                >
+                  Save Test Type
               </button>
+              </div>
               <button
                 id="final-button-two"
-                onChange={this.handleCancle}
+                onClick={this.handleCancle}
                 type="cancle"
                 className="close"
               >

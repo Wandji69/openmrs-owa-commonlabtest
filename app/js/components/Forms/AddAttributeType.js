@@ -46,7 +46,6 @@ class AddAttributeType extends Component {
             </div>
             <div>
               <p>Multiset Name
-
                 <input type="text"
                   className="right-align"
                   />
@@ -124,6 +123,7 @@ class AddAttributeType extends Component {
                 />
               </p>
             </div>
+            
           </FieldInput>
         </FormContext>
       </div>
